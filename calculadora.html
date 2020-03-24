@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <script src="calculadora.js"></script>
+</head>
+<body class="container">
+    <form class="form" name="calc" action="mailto:moraes.jlcm@gmail.com">
+        <h1 class="text-center">Calculadora Simples</h1>
+        <hr style="width: 25%; height: 1px; background-color: gray;">
+        
+        <div class="form-group">
+            <label for="data">Número 1</label>
+            <input id="n1" type="text" name="nome" class="form-control" style="width: 20%";/>
+        </div>
+
+        <div class="form-group">
+            <label for="data">Número 2</label>
+            <input id="n2" type="text" name="nome" class="form-control" style="width: 20%";/>
+        </div>
+
+        <!--Soma-->
+        <button class="btn btn-primary" type="button" onclick="soma()"> + </button>
+        <!--Subtração-->
+        <button class="btn btn-primary" type="button" onclick="subtracao()"> - </button>
+        <!--Multiplicação-->
+        <button class="btn btn-primary" type="button" onclick="multiplicacao()"> * </button>
+        <!--Divisão-->
+        <button class="btn btn-primary" type="button" onclick="divisao()"> / </button>
+        <!--Limpar-->
+        <button id="limpar" class="btn btn-primary" type="button" onclick="reset()"> Limpar </button>
+
+        <!--
+        <div class="form-group">
+            <label for="data">Resultado</label>
+            <input id="result" type="text" name="result" class="form-control" style="width: 20%";/>
+        </div>
+        -->
+    </form>
+    <!--Para opção:
+        <select name="sinal" id="sinal">
+            <option value="+">+</option>
+            ..
+            ..
+            ..
+        </select>
+    -->
+</body>
+</html>
